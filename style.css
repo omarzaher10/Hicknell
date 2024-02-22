@@ -1,0 +1,473 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #fa7d09;
+    --secondary-color: #ffffff;
+}
+
+
+
+
+
+/*  NAV BARR */
+
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--main-color) !important;
+}
+
+
+.nav-link {
+    color: black !important;
+    transition: all 1s;
+}
+
+
+.navbar-nav .nav-link:hover {
+
+    color: var(--main-color) !important;
+}
+
+.nav-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+nav i {
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav i:hover {
+    color: var(--main-color);
+}
+
+/*  */
+
+
+
+
+
+
+
+/* HOME */
+
+#Home {
+    background-image: url(images/slider-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-bg {
+
+    background: linear-gradient(to right, rgba(47, 37, 25, 0.85), rgba(47, 37, 25, 0.55));
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+#Home .btn-1 {
+
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px 25px;
+    border: 1px solid var(--main-color);
+    border-radius: 0;
+    transition: all 0.5s;
+
+
+}
+
+
+#Home .btn-2 {
+
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 10px 25px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0;
+    transition: all 0.5s;
+
+
+
+}
+
+
+#Home .btn-1:hover {
+    background-color: transparent;
+    color: var(--main-color);
+
+}
+
+
+#Home .btn-2:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+
+}
+
+
+#Home .carousel-indicators button.active {
+
+    background-color: var(--secondary-color);
+}
+
+
+#Home .carousel-indicators button {
+
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transition: all 1s;
+
+}
+
+
+
+#Home .carousel-indicators button:focus {
+
+    background-color: var(--secondary-color);
+}
+
+#Home .carousel-indicators {
+
+    justify-content: start;
+    margin: 5%;
+
+}
+
+/*  */
+
+
+
+
+
+
+
+/* ABOUT */
+
+#About button {
+
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid var(--main-color);
+    transition: all 0.5s;
+}
+
+
+#About button:hover {
+
+    background-color: transparent;
+    color: var(--main-color);
+
+}
+
+
+/*  */
+
+
+
+
+
+
+/* SERVICES */
+
+.services-desc {
+    background-color: #f4f5f6;
+    ;
+}
+
+.services-desc a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.services-desc a:hover {
+    color: var(--main-color);
+}
+
+.media-query-2 {
+
+    display: none;
+
+}
+
+
+@media screen and (max-width:993px) {
+
+    .media-query-2 {
+
+        display: block;
+    }
+
+
+    .media-query-1 {
+
+        display: none;
+    }
+
+}
+
+/*  */
+
+
+
+
+
+
+
+/* WORKS */
+
+
+#Works {
+    background-color: #2f2519;
+    color: white;
+}
+
+
+
+/* mohemaa neeekkk */
+.carousel-control-next {
+
+    position: relative;
+    left: 60px;
+
+}
+
+.carousel-control-next-icon {
+
+    background-color: var(--main-color);
+}
+
+.carousel-control-prev-icon {
+    background-color: var(--main-color);
+}
+
+
+/* gdedaa */
+/* hena el tbottom 110% msh btshtghl m3 top 0 f lazem a3ml kda */
+/* bas el top 110%vbtshtghl m3 el bottom 0 zy f exam el js  */
+.layout {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 150%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    transition: all 0.5s;
+
+}
+
+
+.work-image:hover .layout {
+
+    bottom: 0;
+}
+
+.layout a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 1s;
+}
+
+.layout a:hover {
+
+    color: var(--main-color);
+}
+
+.media-2 {
+    display: none;
+}
+
+.media-3 {
+    display: none;
+}
+
+
+.media-2 .carousel-button {
+    left: 10%;
+}
+
+@media screen and (max-width:768px) {
+
+    .media-1 {
+        display: none;
+    }
+
+    .media-2 {
+        display: none;
+    }
+
+    .media-3 {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    .media-1 {
+        display: none;
+    }
+
+    .media-2 {
+        display: block;
+    }
+
+    .media-3 {
+        display: none;
+    }
+
+
+}
+
+
+.customer-1{
+   border:  5px solid #efefef;
+}
+
+.customer-1 img{
+    position: absolute;
+    bottom: 80%;
+    left: 20;
+    
+}
+
+.customer-1 span{
+    color: var(--main-color);
+}
+
+
+/*  */
+
+
+
+
+
+/* CONTACT */
+
+
+#Contact button{
+
+    padding: 10px 30px;
+    background: var(--main-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--main-color);
+    transition: all 0.5s;
+    
+}
+
+#Contact button:hover{
+
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+
+
+@media screen and (max-width:768px){
+    iframe{
+        width: 450px;
+        
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px){
+    iframe{
+        width:570px ;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1039px){
+    iframe{
+        height:400px;
+        width: 390px ;
+    }
+}
+
+
+@media screen and (min-width:1040px) and (max-width:1250px){
+    iframe{
+        height: 400px;
+        width:500px ;
+    }
+}
+
+/*  */
+
+
+
+
+/* FOOTER */
+
+#footer{
+
+
+    background-color:#2f2519;
+
+}
+
+.footer-icon{
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px white;
+    transition: all 0.5s;
+
+
+}
+
+
+.footer-i i:hover.footer-icon{
+
+    color: var(--main-color);
+    border: solid 1px var(--main-color);
+}
+
+
+.contact-us{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.contact-us:hover{
+
+    color: var(--main-color);
+}
+
+#footer .signUp button{
+    background-color: var(--main-color);
+    border: solid 1px var(--main-color);
+    color: var(--secondary-color);
+    transition: all 0.5s;
+    padding: 10px 25px;
+}
+
+#footer .signUp button:hover{
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+
+/*  */
+
+
+
+
